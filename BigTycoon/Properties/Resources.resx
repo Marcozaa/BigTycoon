@@ -1,0 +1,679 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rotaie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rotaie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stazione" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stazione.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkv_treno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkv_treno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hamburger_icon_bianca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hamburger_icon_bianca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guida_parla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guida_parla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coin.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fabbrica2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fabbrica2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treno_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treno_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magazzino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magazzino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaOro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaOro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pepita_oro_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepita_oro_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="condominio_verde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\condominio_verde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copper_Ingot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copper_Ingot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="silver-metal-icon-png-favpng-WLK5EfYjA8zrfhBsmPAeYHDQ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silver-metal-icon-png-favpng-WLK5EfYjA8zrfhBsmPAeYHDQ1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_soldi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_soldi2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaOro_topdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaOro_topdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="argento_industria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\argento_industria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oro_industria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oro_industria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alberi_market" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alberi_market.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omino2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\omino2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casa_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casa_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dashboard_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dashboard_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guida1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pepita_oro_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepita_oro_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="laghetto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laghetto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casaPlayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casaPlayer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="razzo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\razzo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLOSE-131994911256789607" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CLOSE-131994911256789607.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\persona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porto_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porto_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tubo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tubo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barra_argento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barra_argento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="condominio_NOTclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\condominio_NOTclicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miniera_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\miniera_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industria_nonavviata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industria_nonavviata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banconotaAffitto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banconotaAffitto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background2_conassi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background2_conassi2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telefono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telefono.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boschetto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boschetto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="robot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\robot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hamburger_icon.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hamburger_icon.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monitor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monitor1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_back_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_back_3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industria.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industria_avviata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industria_avviata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asta_icona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asta_icona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cpu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cpu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goldbars256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goldbars256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fabbrica1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fabbrica1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_back_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_back_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rame_industria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rame_industria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="negozioGiocattoli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\negozioGiocattoli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_back_nuovo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_back_nuovo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaRame_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaRame_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_avviotreno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_avviotreno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_right_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_right_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stazione_ferroviaria_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stazione_ferroviaria_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LOGIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGIN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="negozio_dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\negozio_dashboard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_front_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_front_2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alluminio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alluminio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottone_msg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottone_msg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fabbricaBricolage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fabbricaBricolage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barra_oro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barra_oro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background2_constrada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background2_constrada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkx_treno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkx_treno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="schermata iniziale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\schermata iniziale.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="provaSfondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\provaSfondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaFerro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaFerro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diamanti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diamanti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ui_fabbrica_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ui_fabbrica_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaFerro_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaFerro_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottoneCliccato_industria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottoneCliccato_industria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barra_soldi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barra_soldi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toggle-switch-design2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toggle-switch-design2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="negozio2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\negozio2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casaPlayer_zonaNonEdificabile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casaPlayer_zonaNonEdificabile.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magazzino_icon_bianca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magazzino_icon_bianca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaFerro1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaFerro1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="formDesign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formDesign.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guida.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casa_NOTclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casa_NOTclicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guida_parla1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guida_parla1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="villa_NOTclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\villa_NOTclicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treno_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treno_2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_right_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_right_2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rotaie_treno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rotaie_treno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gestione" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gestione.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ferro_industria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ferro_industria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_front_nuovo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_front_nuovo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuotatore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuotatore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ferro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ferro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icona_grafico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icona_grafico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cariola" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cariola.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="argento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\argento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_front_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_front_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaFerro1_topdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaFerro1_topdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottoneCliccato_industria1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottoneCliccato_industria1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="peluche" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peluche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaFerro_NOTclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaFerro_NOTclicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_left_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_left_1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottonecliccato_industriaAnim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottonecliccato_industriaAnim.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stazione_ferroviaria_NOTclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stazione_ferroviaria_NOTclicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="negozio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\negozio1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="citta_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\citta_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaOro_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaOro_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blocco_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blocco_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_front_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_front_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="218466" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\218466.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_icona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_icona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icona_grafico_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icona_grafico_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dashboard_stazione1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dashboard_stazione1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LOGIN2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGIN2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="villa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\villa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_left_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_left_3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cuffie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cuffie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rotaie1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rotaie1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="negozio3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\negozio3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porto_NOTclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porto_NOTclicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pepita_argento_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepita_argento_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Schermata iniziale 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Schermata iniziale 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appartamento_topdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appartamento_topdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="laghetto_market" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laghetto_market.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miniera_dragdrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\miniera_dragdrop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_right_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_right_3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diamanti_industria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diamanti_industria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background2_conassi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background2_conassi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaRame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaRame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salvaGioco_icona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salvaGioco_icona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barra_ambiente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barra_ambiente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="condominio_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\condominio_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_back_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_back_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cavallo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cavallo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casaPlayer_inCostruzione" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casaPlayer_inCostruzione.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casaPlayer_zonaNonEdificabile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casaPlayer_zonaNonEdificabile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alluminio_industria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alluminio_industria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box_numeri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box_numeri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toggle-switch-design1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toggle-switch-design1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terreno1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terreno1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="click" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\click.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaRame_NOTclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaRame_NOTclicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Miniera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Miniera.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omino1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\omino1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottoneNonCliccato_industria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottoneNonCliccato_industria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaRame_topdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaRame_topdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="condominio_topdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\condominio_topdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_left_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_left_2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="condominio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\condominio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_idle_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_idle_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frecciasinistra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frecciasinistra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industriaOro_NOTclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\industriaOro_NOTclicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miniera_NOTclicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\miniera_NOTclicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fabbrica3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fabbrica3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plastica_industria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plastica_industria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="piccone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piccone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fabbricaTecnologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fabbricaTecnologia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frecciadestra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frecciadestra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fabbricaGiocattoli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fabbricaGiocattoli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="materiali_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\materiali_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legno_indsutria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legno_indsutria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plastica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plastica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pepita_argento_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepita_argento_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="villa_clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\villa_clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stanza1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stanza1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porto1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porto1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="topdown_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\topdown_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="negozioTecnologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\negozioTecnologia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="legno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\legno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="negozioBricolage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\negozioBricolage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="presa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\presa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

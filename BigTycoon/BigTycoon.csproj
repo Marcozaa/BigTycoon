@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3344210F-394C-4F82-969C-ECECE9CF01E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BigTycoon</RootNamespace>
+    <AssemblyName>BigTycoon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FireSharp, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FireSharp.1.1.0\lib\net45\FireSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FireSharp.Serialization.JsonNet, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FireSharp.Serialization.JsonNet.1.1.0\lib\net45\FireSharp.Serialization.JsonNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=104.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Casa.cs" />
+    <Compile Include="Dati.cs" />
+    <Compile Include="datiCase.cs" />
+    <Compile Include="Edificio.cs" />
+    <Compile Include="Fabbrica.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdifici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdifici.Designer.cs">
+      <DependentUpon>FormEdifici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestioneFabbrica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestioneFabbrica.Designer.cs">
+      <DependentUpon>gestioneFabbrica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestioneIndustria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestioneIndustria.Designer.cs">
+      <DependentUpon>GestioneIndustria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestioneNegozio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestioneNegozio.Designer.cs">
+      <DependentUpon>gestioneNegozio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestioneStazione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestioneStazione.Designer.cs">
+      <DependentUpon>gestioneStazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giocatore.cs" />
+    <Compile Include="giocoMiniera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giocoMiniera.Designer.cs">
+      <DependentUpon>giocoMiniera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiocoPrincipale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiocoPrincipale.Designer.cs">
+      <DependentUpon>GiocoPrincipale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Industria.cs" />
+    <Compile Include="Infrastrutture.cs" />
+    <Compile Include="InserisciNomeUtente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InserisciNomeUtente.Designer.cs">
+      <DependentUpon>InserisciNomeUtente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item1.cs" />
+    <Compile Include="Item2.cs" />
+    <Compile Include="Item3.cs" />
+    <Compile Include="LoginResgister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginResgister.Designer.cs">
+      <DependentUpon>LoginResgister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marketImmobili.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marketImmobili.Designer.cs">
+      <DependentUpon>marketImmobili.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Materiali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiali.Designer.cs">
+      <DependentUpon>Materiali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="messageBoxCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messageBoxCustom.Designer.cs">
+      <DependentUpon>messageBoxCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negozio.cs" />
+    <Compile Include="Oggetto.cs" />
+    <Compile Include="posizioniCase.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Residenziali.cs" />
+    <Compile Include="salvaStato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salvataggi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salvataggi.Designer.cs">
+      <DependentUpon>Salvataggi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scraper.cs" />
+    <Compile Include="Stazione.cs" />
+    <Compile Include="Treno.cs" />
+    <Compile Include="Villaggio_amico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Villaggio_amico.Designer.cs">
+      <DependentUpon>Villaggio_amico.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdifici.resx">
+      <DependentUpon>FormEdifici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestioneFabbrica.resx">
+      <DependentUpon>gestioneFabbrica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestioneIndustria.resx">
+      <DependentUpon>GestioneIndustria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestioneNegozio.resx">
+      <DependentUpon>gestioneNegozio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestioneStazione.resx">
+      <DependentUpon>gestioneStazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giocoMiniera.resx">
+      <DependentUpon>giocoMiniera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiocoPrincipale.resx">
+      <DependentUpon>GiocoPrincipale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InserisciNomeUtente.resx">
+      <DependentUpon>InserisciNomeUtente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginResgister.resx">
+      <DependentUpon>LoginResgister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marketImmobili.resx">
+      <DependentUpon>marketImmobili.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiali.resx">
+      <DependentUpon>Materiali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messageBoxCustom.resx">
+      <DependentUpon>messageBoxCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Salvataggi.resx">
+      <DependentUpon>Salvataggi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Villaggio_amico.resx">
+      <DependentUpon>Villaggio_amico.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background2_conassi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background2_conassi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schermata iniziale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schermata iniziale 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guida.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guida_parla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guida_parla1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casaPlayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casaPlayer_zonaNonEdificabile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casaPlayer_zonaNonEdificabile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casaPlayer_inCostruzione.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barra_oro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barra_argento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background2_constrada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotaie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omino1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formDesign.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stazione_ferroviaria_NOTclicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stazione_ferroviaria_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omino2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barra_soldi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porto_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porto_NOTclicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\condominio_NOTclicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa_NOTclicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\condominio_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniera_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniera_NOTclicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaFerro_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaFerro_NOTclicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaRame_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaRame_NOTclicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\villa_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\villa_NOTclicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaFerro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaFerro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotaie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\condominio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banconotaAffitto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\condominio_verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuotatore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\villa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaRame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaOro_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaOro_NOTclicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaOro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvaGioco_icona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotaie_treno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestione.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treno_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industria_nonavviata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industria_avviata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggle-switch-design2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggle-switch-design1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frecciasinistra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frecciadestra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\citta_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferro_industria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plastica_industria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\legno_indsutria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottoneNonCliccato_industria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottonecliccato_industriaAnim.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottoneCliccato_industria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottoneCliccato_industria1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\argento_industria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver-metal-icon-png-favpng-WLK5EfYjA8zrfhBsmPAeYHDQ1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oro_industria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldbars256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamanti_industria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\218466.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rame_industria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copper_Ingot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alluminio_industria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blocco_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\materiali_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alluminio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\argento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamanti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\legno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plastica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fabbrica1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fabbrica2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fabbrica3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fabbricaBricolage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fabbricaGiocattoli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fabbricaTecnologia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_ambiente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra_soldi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alberi_market.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boschetto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laghetto_market.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laghetto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_back_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_back_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_back_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_front_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_front_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_front_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_left_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_right_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_back_nuovo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_idle_front_nuovo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stanza1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topdown_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terreno1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appartamento_topdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\condominio_topdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaFerro1_topdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaOro_topdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industriaRame_topdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\provaSfondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_fabbrica_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cavallo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peluche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\razzo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cpu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuffie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telefono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treno_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stazione.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negozioBricolage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negozioTecnologia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negozioGiocattoli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negozio2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negozio3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negozio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icona_grafico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icona_grafico_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLOSE-131994911256789607.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hamburger_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hamburger_icon_bianca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miniera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepita_oro_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_numeri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asta_icona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magazzino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magazzino_icon_bianca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_icona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negozio_dashboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piccone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottone_msg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard_stazione1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkx_treno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkv_treno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_avviotreno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniera_dragdrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepita_argento_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepita_oro_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepita_argento_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tubo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cariola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presa.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
